@@ -1,6 +1,7 @@
 package com.example.getmesocialservice.model;
 
 public class User {
+    private int userId;
     private String name;
     private String address;
     private int age;
@@ -41,7 +42,16 @@ public class User {
         return profilePicUrl;
     }
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public void setProfilePicUrl(String profilePicUrl) {
+
         this.profilePicUrl = profilePicUrl;
     }
 }
