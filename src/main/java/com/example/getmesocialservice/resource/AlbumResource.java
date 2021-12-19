@@ -40,7 +40,8 @@ public class AlbumResource {
     }
 
     @DeleteMapping("/album")
-    public Album deleteUser(@RequestParam(name="albumId") int albumId){
+    public Album deleteAlbum(@RequestParam(name="albumId") int albumId){
+        System.out.println("Deleted............");
         return albumService.deleteAlbum(albumId);
     }
 }

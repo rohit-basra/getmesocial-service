@@ -14,12 +14,12 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public User getUser(){
+    /*public User getUser(){
         return userRepository.getUser();
-        /*User user = new User("rohit","233 xyz",35,"");
+        *//*User user = new User("rohit","233 xyz",35,"");
         return user;
-        */
-    }
+        *//*
+    }*/
 
     public User saveUser(User user) {
 

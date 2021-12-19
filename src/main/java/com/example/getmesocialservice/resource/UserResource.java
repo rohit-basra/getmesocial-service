@@ -15,11 +15,11 @@ public class UserResource {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/user")
+    /*@GetMapping("/user")
     public User getUser(){
 
         return userService.getUser();
-    }
+    }*/
 
     @PostMapping("/user")
     public User saveUser(@RequestBody User user){

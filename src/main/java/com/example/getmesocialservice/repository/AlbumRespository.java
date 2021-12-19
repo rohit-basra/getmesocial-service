@@ -11,14 +11,17 @@ public class AlbumRespository {
 
     List<Album> albumList = new ArrayList<>();
 
-    public Album getAlbum() {
+    /*public Album getAlbum() {
         Album album = new Album("Abc","Abc Desc","no pic");
        return album;
-    }
+    }*/
 
     public Album saveAlbum(Album album) {
-        albumList.add(album);
+        //System.out.println(album.getAlbumId());
         album.setAlbumId(albumList.size()+1);
+        //System.out.println(album.getAlbumId());
+        albumList.add(album);
+        //System.out.println(album.getAlbumId());
         return album;
     }
 

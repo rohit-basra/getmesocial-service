@@ -12,16 +12,16 @@ public class UserRepository {
 
     List<User> userList = new ArrayList<>();
 
-    public User getUser(){
+    /*public User getUser(){
         //User user = new User("rohit","233 xyz",35,"");
         //User user = new User();
         //return user;
         return null;
-    }
+    }*/
 
     public User saveUser(User user) {
-        userList.add(user);
         user.setUserId(userList.size()+1);
+        userList.add(user);
         return user;
     }
 
